@@ -1,0 +1,47 @@
+================================================================================
+EDTS DASHBOARD - AI ASİSTAN VE BUTON DEĞİŞİKLİKLERİ - SUNUCUYA ATILACAK DOSYALAR
+================================================================================
+
+Aşağıdaki dosyaları sunucuda AYNI YOL ile değiştirin. (Proje kökü: kgm5 veya apps/edts olabilir)
+
+1) DASHBOARD VIEW (AI Asistan satırı + butonların yeri)
+   Yerel:  kgm5/apps/edts/application/views/dashboard_v/view/content.php
+   Sunucu: .../application/views/dashboard_v/view/content.php
+
+2) DASHBOARD SAYFA SCRİPTİ (AI tahmin otomatik yükleme)
+   Yerel:  kgm5/apps/edts/application/views/dashboard_v/view/page_script.php
+   Sunucu: .../application/views/dashboard_v/view/page_script.php
+
+3) AI CONTROLLER (kapasite tahmin API)
+   Yerel:  kgm5/apps/edts/application/controllers/Ai.php
+   Sunucu: .../application/controllers/Ai.php
+
+4) AI SERVİCE JS (requestCapacityForecast + buton davranışları)
+   Yerel:  kgm5/apps/edts/assets/js/moduls/ai/ai_service.js
+   Sunucu: .../assets/js/moduls/ai/ai_service.js
+
+--------------------------------------------------------------------------------
+KONTROL (sunucuda güncel dosya yüklü mü?):
+--------------------------------------------------------------------------------
+- Tarayıcıda Dashboard sayfasını açın -> Sağ tık "Sayfa kaynağını görüntüle" (View Source).
+- Ara (Ctrl+F): "dashboard_ai_asistan_row"  -> Bulunmalı (AI Asistan satırı).
+- Ara: "dashboard_ai_buttons_row"            -> Bulunmalı (AI ile Ara, Haftalık AI Özet).
+- Ara: "requestCapacityForecast"             -> Bulunmalı (ai_service.js içinde).
+
+Bulamıyorsanız: Dosyalar yanlış dizine atılmış veya önbellek kullanılıyor.
+- Tarayıcıda Ctrl+Shift+R (sert yenile) deneyin.
+- FTP ile atarken application/views/dashboard_v/view/ klasörünün içine content.php
+  ve page_script.php atıldığından emin olun.
+
+--------------------------------------------------------------------------------
+HARD REFRESH OLMADAN GÜNCELLEME (cache busting - otomatik):
+--------------------------------------------------------------------------------
+- Sürüm, deploy'da güncellenen dosyaların (ai_service.js, dashboard content.php,
+  config.php) değişiklik zamanına göre otomatik hesaplanır. Yeni dosya atıldığında
+  sürüm kendiliğinden değişir; elle artırma gerekmez.
+- İsterseniz config.php içinde asset_version'ı bir sayıya (örn. '2') set ederek
+  sabit sürüm de kullanabilirsiniz.
+- Dashboard sayfası için Cache-Control: no-cache ayarı eklendi; HTML her seferinde
+  sunucudan tazelenir.
+
+================================================================================

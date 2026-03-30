@@ -1,0 +1,33 @@
+
+
+{
+	"sDecimal":        ",",
+	"sEmptyTable":     "Henüz kayıt yok..",
+	"sInfo":           "_TOTAL_ Kayıt Bulundu",
+	"sInfoEmpty":      "Kayıt yok",
+	"sInfoFiltered":   "(_MAX_ Kayıt İçerisinden)",
+	"sInfoPostFix":    "",
+	"sInfoThousands":  ".",
+	"sLengthMenu":     "Sayfada _MENU_ kayıt göster",
+	"sLoadingRecords": "Yükleniyor...",
+	"sProcessing":     "İşleniyor...",
+	"sSearch":         "Ara:",
+	"sZeroRecords":    "Eşleşen kayıt bulunamadı",
+	"oPaginate": {
+		"sFirst":    "İlk",
+		"sLast":     "Son",
+		"sNext":     "Sonraki",
+		"sPrevious": "Önceki"
+	},
+	"oAria": {
+		"sSortAscending":  ": artan sütun sıralamasını aktifleştir",
+		"sSortDescending": ": azalan sütun sıralamasını aktifleştir"
+	},
+	"select": {
+		"rows": {
+			"_": "%d kayıt seçildi",
+			"0": "",
+			"1": "1 kayıt seçildi"
+		}
+	}
+}

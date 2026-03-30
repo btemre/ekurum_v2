@@ -1,0 +1,162 @@
+.sortable{
+  cursor: move;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
+  --height: 2rem;
+  --width: 2rem;
+  --padding-top: 0.1rem;
+  --padding-right: 0.6rem;
+  margin-left: 0rem;
+  position: absolute;
+  background-color: #cbbdee9d;
+  content: "+";
+  --content: url(/../assets/media/icons/duotune/arrows/arr072.svg);
+}
+
+.form-control.form-control-solid {
+  border-color: #989899;
+}
+
+.form-control.form-control-solid:active {
+  border-color: #01b6d6;
+}
+.form-control.form-control-solid:focus {
+  border-color: #01b6d6;
+}
+
+.form-select.form-select-solid {
+  border-color: #989899;
+}
+.form-select.form-select-solid:focus {
+  border-color: #01b6d6;
+}
+.form-select.form-select-solid:active {
+  border-color: #01b6d6;
+}
+
+/* Premium AI butonları - belirgin ve kurumsal görünüm */
+.btn-ai {
+  font-weight: 700 !important;
+  letter-spacing: 0.03em;
+  padding: 0.55rem 1rem !important;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.25s ease, border-color 0.2s ease, background 0.25s ease;
+  border: 1px solid transparent;
+  position: relative;
+}
+.btn-ai:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+.btn-ai:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.btn-ai .bi-stars,
+.btn-ai .bi-search {
+  font-size: 1.15em;
+  vertical-align: -0.12em;
+  opacity: 0.95;
+}
+/* Ana özet butonları - dolu primary */
+.btn-ai.btn-primary {
+  background: linear-gradient(135deg, #009ef7 0%, #0095e8 100%) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  color: #fff !important;
+}
+.btn-ai.btn-primary:hover {
+  background: linear-gradient(135deg, #0095e8 0%, #0081c6 100%) !important;
+  box-shadow: 0 6px 20px rgba(0, 158, 247, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+/* Haftalık AI Özet - outline premium (mavi) */
+.btn-ai.btn-light-primary {
+  background: linear-gradient(180deg, #f4faff 0%, #e8f4fc 50%, #dceefb 100%) !important;
+  border: 1px solid rgba(0, 158, 247, 0.45) !important;
+  color: #0077c2 !important;
+  box-shadow: 0 3px 12px rgba(0, 158, 247, 0.12), 0 1px 3px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.btn-ai.btn-light-primary:hover {
+  background: linear-gradient(180deg, #e8f4fc 0%, #d4edfc 50%, #b8e2fa 100%) !important;
+  border-color: #0095e8 !important;
+  color: #006bb3 !important;
+  box-shadow: 0 6px 20px rgba(0, 158, 247, 0.22), 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+/* AI ile Ara butonu - outline premium (turkuaz) */
+.btn-ai.btn-light-info {
+  background: linear-gradient(180deg, #f2fafb 0%, #e6f6f8 50%, #d8f0f4 100%) !important;
+  border: 1px solid rgba(0, 188, 212, 0.5) !important;
+  color: #00838f !important;
+  box-shadow: 0 3px 12px rgba(0, 188, 212, 0.12), 0 1px 3px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.btn-ai.btn-light-info:hover {
+  background: linear-gradient(180deg, #e6f6f8 0%, #d4f0f8 50%, #b8e8ef 100%) !important;
+  border-color: #00acc1 !important;
+  color: #006064 !important;
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.22), 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* Premium AI Asistan satırı - kapasite tahmini */
+.ai-asistan-premium {
+  background: linear-gradient(135deg, #f8fcff 0%, #eef6fc 50%, #e8f4fc 100%);
+  border: 1px solid rgba(0, 158, 247, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 158, 247, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.ai-asistan-premium:hover {
+  box-shadow: 0 4px 20px rgba(0, 158, 247, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 158, 247, 0.35);
+}
+.ai-asistan-label {
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  color: #0095e8;
+}
+.ai-asistan-label .bi-stars {
+  font-size: 1.25rem;
+  color: #009ef7;
+}
+.ai-asistan-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a5f;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+}
+.ai-asistan-premium.ai-loading .ai-asistan-text {
+  animation: ai-thinking 1.2s ease-in-out infinite;
+}
+@keyframes ai-thinking {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+.ai-asistan-btn {
+  border-radius: 8px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 6px rgba(0, 158, 247, 0.2);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+.ai-asistan-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 158, 247, 0.3);
+}
+
+/* Tablolarda .fs-5 = 1rem ve satır yüksekliği düşük */
+.table.fs-5 {
+  font-size: 1rem !important;
+  line-height: 1.35;
+}
+.table.fs-5 thead th,
+.table.fs-5 tbody td,
+.table.fs-5 tfoot td {
+  padding-top: 0.35rem !important;
+  padding-bottom: 0.35rem !important;
+  vertical-align: middle;
+}
+.table.fs-5 thead th {
+  font-size: 1rem;
+}

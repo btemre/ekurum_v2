@@ -1,0 +1,5 @@
+# Environment (contains secrets)
+.env
+
+# Keep example for reference
+!.env.example

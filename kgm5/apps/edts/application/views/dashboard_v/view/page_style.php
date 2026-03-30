@@ -1,0 +1,1 @@
+<link href="<?php echo base_url('assets/css/custom.css'); ?>?v=<?php echo asset_ver(); ?>" rel="stylesheet" type="text/css" />

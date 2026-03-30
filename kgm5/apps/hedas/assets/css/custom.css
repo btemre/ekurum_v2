@@ -1,0 +1,36 @@
+.sortable{
+  cursor: move;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before, table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
+  --height: 2rem;
+  --width: 2rem;
+  --padding-top: 0.1rem;
+  --padding-right: 0.6rem;
+  margin-left: 0rem;
+  position: absolute;
+  background-color: #cbbdee9d;
+  content: "+";
+  --content: url(/../assets/media/icons/duotune/arrows/arr072.svg);
+}
+
+.form-control.form-control-solid {
+  border-color: #989899;
+}
+
+.form-control.form-control-solid:active {
+  border-color: #01b6d6;
+}
+.form-control.form-control-solid:focus {
+  border-color: #01b6d6;
+}
+
+.form-select.form-select-solid {
+  border-color: #989899;
+}
+.form-select.form-select-solid:focus {
+  border-color: #01b6d6;
+}
+.form-select.form-select-solid:active {
+  border-color: #01b6d6;
+}
